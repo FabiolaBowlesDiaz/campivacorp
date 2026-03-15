@@ -7,12 +7,12 @@
 
 ### Foundation
 
-- [ ] **FOUN-01**: Brand colors applied via CSS variables (#25272f, #95b444, #cbdc53, #5d6f31, #ffffff)
-- [ ] **FOUN-02**: Typography loaded -- Nunito Sans 800 for headings, Montserrat 500/700 for body
+- [x] **FOUN-01**: Brand colors applied via CSS variables (#25272f, #95b444, #cbdc53, #5d6f31, #ffffff)
+- [x] **FOUN-02**: Typography loaded -- Nunito Sans 800 for headings, Montserrat 500/700 for body
 - [ ] **FOUN-03**: SVG isotipo created (3 organic overlapping leaves in green gradient)
-- [ ] **FOUN-04**: config.yaml updated (site name, language es, blog disabled, dark mode disabled)
-- [ ] **FOUN-05**: DaisyUI v5 removed or downgraded to v4 (Tailwind 3 incompatibility)
-- [ ] **FOUN-06**: AstroWind blog routes removed or noindexed
+- [x] **FOUN-04**: config.yaml updated (site name, language es, blog disabled, dark mode disabled)
+- [x] **FOUN-05**: DaisyUI v5 removed or downgraded to v4 (Tailwind 3 incompatibility)
+- [x] **FOUN-06**: AstroWind blog routes removed or noindexed
 - [ ] **FOUN-07**: Brand ornament SVG patterns created (leaf shapes at 5-10% opacity)
 
 ### Navigation
@@ -133,12 +133,12 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUN-01 | Phase 1 | Pending |
-| FOUN-02 | Phase 1 | Pending |
+| FOUN-01 | Phase 1 | Complete |
+| FOUN-02 | Phase 1 | Complete |
 | FOUN-03 | Phase 1 | Pending |
-| FOUN-04 | Phase 1 | Pending |
-| FOUN-05 | Phase 1 | Pending |
-| FOUN-06 | Phase 1 | Pending |
+| FOUN-04 | Phase 1 | Complete |
+| FOUN-05 | Phase 1 | Complete |
+| FOUN-06 | Phase 1 | Complete |
 | FOUN-07 | Phase 1 | Pending |
 | NAV-01 | Phase 2 | Pending |
 | NAV-02 | Phase 2 | Pending |

@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans:** 2 plans
 
 Plans:
-- [ ] 01-01-PLAN.md -- Remove DaisyUI, install brand fonts, rewrite CSS variables and config.yaml, delete blog routes
+- [x] 01-01-PLAN.md -- Remove DaisyUI, install brand fonts, rewrite CSS variables and config.yaml, delete blog routes
 - [ ] 01-02-PLAN.md -- Create SVG isotipo Logo.astro and BrandOrnament.astro decorative component
 
 ### Phase 2: Page Shell + Above the Fold
@@ -92,7 +92,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/2 | Planned | - |
+| 1. Foundation | 1/2 | In progress | - |
 | 2. Page Shell + Above the Fold | 0/3 | Not started | - |
 | 3. Content Sections | 0/3 | Not started | - |
 | 4. Conversion + Polish | 0/3 | Not started | - |
