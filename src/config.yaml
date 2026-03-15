@@ -1,0 +1,55 @@
+site:
+  name: 'campivacorp.'
+  site: 'https://campivacorp.com'
+  base: '/'
+  trailingSlash: false
+
+metadata:
+  title:
+    default: 'campivacorp.'
+    template: '%s -- campivacorp.'
+  description: 'campivacorp. - Soluciones agroindustriales para el mundo. Trading, brokeraje y logistica de productos agroindustriales con certificaciones internacionales.'
+  robots:
+    index: true
+    follow: true
+  openGraph:
+    site_name: 'campivacorp.'
+    images:
+      - url: '~/assets/images/default.png'
+        width: 1200
+        height: 628
+    type: website
+
+i18n:
+  language: es
+  textDirection: ltr
+
+apps:
+  blog:
+    isEnabled: false
+    postsPerPage: 6
+    post:
+      isEnabled: false
+      permalink: '/%slug%'
+      robots:
+        index: false
+    list:
+      isEnabled: false
+      pathname: 'blog'
+      robots:
+        index: false
+    category:
+      isEnabled: false
+      pathname: 'category'
+      robots:
+        index: false
+    tag:
+      isEnabled: false
+      pathname: 'tag'
+      robots:
+        index: false
+    isRelatedPostsEnabled: false
+    relatedPostsCount: 4
+
+ui:
+  theme: 'light:only'
