@@ -1,14 +1,14 @@
 # Requirements: campivacorp. Landing Page
 
 **Defined:** 2026-03-15
-**Core Value:** Present campivacorp. as a credible, premium agroindustrial trading partner — the site must convey trust, expertise, and professionalism through precise brand execution.
+**Core Value:** Present campivacorp. as a credible, premium agroindustrial trading partner -- the site must convey trust, expertise, and professionalism through precise brand execution.
 
 ## v1 Requirements
 
 ### Foundation
 
 - [ ] **FOUN-01**: Brand colors applied via CSS variables (#25272f, #95b444, #cbdc53, #5d6f31, #ffffff)
-- [ ] **FOUN-02**: Typography loaded — Nunito Sans 800 for headings, Montserrat 500/700 for body
+- [ ] **FOUN-02**: Typography loaded -- Nunito Sans 800 for headings, Montserrat 500/700 for body
 - [ ] **FOUN-03**: SVG isotipo created (3 organic overlapping leaves in green gradient)
 - [ ] **FOUN-04**: config.yaml updated (site name, language es, blog disabled, dark mode disabled)
 - [ ] **FOUN-05**: DaisyUI v5 removed or downgraded to v4 (Tailwind 3 incompatibility)
@@ -19,28 +19,28 @@
 
 - [ ] **NAV-01**: Fixed navbar with isotipo SVG + "campiva" bold + "corp." regular wordmark
 - [ ] **NAV-02**: Navbar links scroll to page sections (anchor navigation with smooth scroll)
-- [ ] **NAV-03**: CTA button "Contáctanos" in #95b444 with hover #5d6f31
+- [ ] **NAV-03**: CTA button "Contactanos" in #95b444 with hover #5d6f31
 - [ ] **NAV-04**: Mobile responsive hamburger menu with section links
-- [ ] **NAV-05**: Navbar background changes on scroll (transparent → solid)
+- [ ] **NAV-05**: Navbar background changes on scroll (transparent to solid)
 
 ### Hero
 
 - [ ] **HERO-01**: Swiper slider with 3 slides, overlay #25272f at 60% opacity
-- [ ] **HERO-02**: Slide 1 — "Soluciones agroindustriales para el mundo" (agricultural fields)
-- [ ] **HERO-03**: Slide 2 — "Calidad certificada en cada transacción" (products)
-- [ ] **HERO-04**: Slide 3 — "25 años conectando mercados" (global commerce)
+- [ ] **HERO-02**: Slide 1 -- "Soluciones agroindustriales para el mundo" (agricultural fields)
+- [ ] **HERO-03**: Slide 2 -- "Calidad certificada en cada transaccion" (products)
+- [ ] **HERO-04**: Slide 3 -- "25 anos conectando mercados" (global commerce)
 - [ ] **HERO-05**: Dual CTAs on each slide: "Ver Productos" (secondary) + "Contactar" (primary)
 - [ ] **HERO-06**: Autoplay with pagination dots, navigation arrows on desktop
 
 ### Stats
 
 - [ ] **STAT-01**: Animated counter section with AOS scroll trigger
-- [ ] **STAT-02**: 4 stats displayed: 25+ años, 7 categorías de productos, Mercados regionales, 5 certificaciones
+- [ ] **STAT-02**: 4 stats displayed: 25+ anos, 7 categorias de productos, Mercados regionales, 5 certificaciones
 - [ ] **STAT-03**: Counter animation counts up from 0 on viewport entry
 
 ### About
 
-- [ ] **ABOU-01**: "Quiénes Somos" section with exact corporate text from brief
+- [ ] **ABOU-01**: "Quienes Somos" section with exact corporate text from brief
 - [ ] **ABOU-02**: Placeholder image (agricultural/industrial theme)
 - [ ] **ABOU-03**: Brand ornament leaf shapes in background at low opacity
 
@@ -54,11 +54,11 @@
 ### Services
 
 - [ ] **SERV-01**: Services section with icon + title + description for each service
-- [ ] **SERV-02**: 7 services displayed: Trading, Brokeraje, Logística, Analítica de mercados, Asesoramiento, Maquilas, Análisis de laboratorio
+- [ ] **SERV-02**: 7 services displayed: Trading, Brokeraje, Logistica, Analitica de mercados, Asesoramiento, Maquilas, Analisis de laboratorio
 
 ### Values
 
-- [ ] **VALU-01**: 4 value cards: Calidad, Respeto, Excelencia, Pasión
+- [ ] **VALU-01**: 4 value cards: Calidad, Respeto, Excelencia, Pasion
 - [ ] **VALU-02**: Each card has icon, title, and description text from brief
 
 ### Certifications
@@ -96,12 +96,12 @@
 
 - [ ] **ANIM-01**: AOS fade-up animations on section entries (cards, stats, text blocks)
 - [ ] **ANIM-02**: AOS NOT used inside Swiper container (conflict prevention)
-- [ ] **ANIM-03**: Subtle, professional animations — no distracting effects
+- [ ] **ANIM-03**: Subtle, professional animations -- no distracting effects
 
 ## v2 Requirements
 
 ### Social Proof
-- **SOCL-01**: Client/partner logo strip ("Confían en nosotros")
+- **SOCL-01**: Client/partner logo strip ("Confian en nosotros")
 - **SOCL-02**: Testimonials from key clients
 
 ### Content
@@ -113,7 +113,7 @@
 - **I18N-02**: Language switcher in navbar
 
 ### Visual
-- **VISU-01**: Value chain infographic (farm → processing → storage → logistics → client)
+- **VISU-01**: Value chain infographic (farm to processing to storage to logistics to client)
 - **VISU-02**: Interactive coverage map (LATAM markets)
 
 ## Out of Scope
@@ -145,51 +145,51 @@
 | NAV-03 | Phase 2 | Pending |
 | NAV-04 | Phase 2 | Pending |
 | NAV-05 | Phase 2 | Pending |
-| HERO-01 | Phase 3 | Pending |
-| HERO-02 | Phase 3 | Pending |
-| HERO-03 | Phase 3 | Pending |
-| HERO-04 | Phase 3 | Pending |
-| HERO-05 | Phase 3 | Pending |
-| HERO-06 | Phase 3 | Pending |
-| STAT-01 | Phase 3 | Pending |
-| STAT-02 | Phase 3 | Pending |
-| STAT-03 | Phase 3 | Pending |
-| ABOU-01 | Phase 4 | Pending |
-| ABOU-02 | Phase 4 | Pending |
-| ABOU-03 | Phase 4 | Pending |
-| PROD-01 | Phase 4 | Pending |
-| PROD-02 | Phase 4 | Pending |
-| PROD-03 | Phase 4 | Pending |
-| PROD-04 | Phase 4 | Pending |
-| SERV-01 | Phase 4 | Pending |
-| SERV-02 | Phase 4 | Pending |
-| VALU-01 | Phase 4 | Pending |
-| VALU-02 | Phase 4 | Pending |
-| CERT-01 | Phase 4 | Pending |
-| CERT-02 | Phase 4 | Pending |
-| PURP-01 | Phase 4 | Pending |
-| PURP-02 | Phase 4 | Pending |
-| CONT-01 | Phase 5 | Pending |
-| CONT-02 | Phase 5 | Pending |
-| CONT-03 | Phase 5 | Pending |
-| CONT-04 | Phase 5 | Pending |
-| CONT-05 | Phase 5 | Pending |
-| FOOT-01 | Phase 5 | Pending |
-| FOOT-02 | Phase 5 | Pending |
-| FOOT-03 | Phase 5 | Pending |
-| FOOT-04 | Phase 5 | Pending |
-| RESP-01 | Phase 6 | Pending |
-| RESP-02 | Phase 6 | Pending |
-| RESP-03 | Phase 6 | Pending |
-| ANIM-01 | Phase 6 | Pending |
-| ANIM-02 | Phase 6 | Pending |
-| ANIM-03 | Phase 6 | Pending |
+| HERO-01 | Phase 2 | Pending |
+| HERO-02 | Phase 2 | Pending |
+| HERO-03 | Phase 2 | Pending |
+| HERO-04 | Phase 2 | Pending |
+| HERO-05 | Phase 2 | Pending |
+| HERO-06 | Phase 2 | Pending |
+| STAT-01 | Phase 2 | Pending |
+| STAT-02 | Phase 2 | Pending |
+| STAT-03 | Phase 2 | Pending |
+| ABOU-01 | Phase 3 | Pending |
+| ABOU-02 | Phase 3 | Pending |
+| ABOU-03 | Phase 3 | Pending |
+| PROD-01 | Phase 3 | Pending |
+| PROD-02 | Phase 3 | Pending |
+| PROD-03 | Phase 3 | Pending |
+| PROD-04 | Phase 3 | Pending |
+| SERV-01 | Phase 3 | Pending |
+| SERV-02 | Phase 3 | Pending |
+| VALU-01 | Phase 3 | Pending |
+| VALU-02 | Phase 3 | Pending |
+| CERT-01 | Phase 3 | Pending |
+| CERT-02 | Phase 3 | Pending |
+| PURP-01 | Phase 3 | Pending |
+| PURP-02 | Phase 3 | Pending |
+| CONT-01 | Phase 4 | Pending |
+| CONT-02 | Phase 4 | Pending |
+| CONT-03 | Phase 4 | Pending |
+| CONT-04 | Phase 4 | Pending |
+| CONT-05 | Phase 4 | Pending |
+| FOOT-01 | Phase 4 | Pending |
+| FOOT-02 | Phase 4 | Pending |
+| FOOT-03 | Phase 4 | Pending |
+| FOOT-04 | Phase 4 | Pending |
+| RESP-01 | Phase 4 | Pending |
+| RESP-02 | Phase 4 | Pending |
+| RESP-03 | Phase 4 | Pending |
+| ANIM-01 | Phase 4 | Pending |
+| ANIM-02 | Phase 4 | Pending |
+| ANIM-03 | Phase 4 | Pending |
 
 **Coverage:**
 - v1 requirements: 48 total
 - Mapped to phases: 48
-- Unmapped: 0 ✓
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-15*
-*Last updated: 2026-03-15 after initial definition*
+*Last updated: 2026-03-15 after roadmap creation (4-phase mapping)*
