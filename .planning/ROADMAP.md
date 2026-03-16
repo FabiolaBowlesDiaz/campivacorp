@@ -65,7 +65,7 @@ Plans:
 
 Plans:
 - [ ] 03-01-PLAN.md -- Create NosotrosSection (two-column text+image) and ProductosSection (7-card accordion grid) widgets
-- [ ] 03-02-PLAN.md -- Create ServiciosSection, ValoresSection, CertificacionesSection, and PropositoSection widgets
+- [x] 03-02-PLAN.md -- Create ServiciosSection, ValoresSection, CertificacionesSection, and PropositoSection widgets
 - [ ] 03-03-PLAN.md -- Wire all 6 content sections into index.astro, visual verification checkpoint
 
 ### Phase 4: Conversion + Polish
@@ -94,5 +94,5 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-16 |
 | 2. Page Shell + Above the Fold | 3/3 | Complete    | 2026-03-16 |
-| 3. Content Sections | 0/3 | Not started | - |
+| 3. Content Sections | 2/3 | In progress | - |
 | 4. Conversion + Polish | 0/3 | Not started | - |
