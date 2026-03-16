@@ -2,6 +2,12 @@
 import Layout from '~/layouts/PageLayout.astro';
 import HeroSlider from '~/components/widgets/HeroSlider.astro';
 import StatsCounter from '~/components/widgets/StatsCounter.astro';
+import NosotrosSection from '~/components/widgets/NosotrosSection.astro';
+import ProductosSection from '~/components/widgets/ProductosSection.astro';
+import ServiciosSection from '~/components/widgets/ServiciosSection.astro';
+import ValoresSection from '~/components/widgets/ValoresSection.astro';
+import CertificacionesSection from '~/components/widgets/CertificacionesSection.astro';
+import PropositoSection from '~/components/widgets/PropositoSection.astro';
 
 const metadata = {
   title: 'campivacorp. - Soluciones agroindustriales para el mundo',
@@ -16,37 +22,15 @@ const metadata = {
   <!-- Stats Counter (id="stats" is inside the component) -->
   <StatsCounter />
 
-  <!-- Phase 3 placeholder sections -->
-  <section id="nosotros" class="scroll-mt-[72px] py-16 md:py-20">
-    <div class="max-w-6xl mx-auto px-4 text-center text-gray-400">
-      <p class="text-sm uppercase tracking-wider">Quienes Somos -- Phase 3</p>
-    </div>
-  </section>
+  <!-- Content Sections -->
+  <NosotrosSection />
+  <ProductosSection />
+  <ServiciosSection />
+  <ValoresSection />
+  <CertificacionesSection />
+  <PropositoSection />
 
-  <section id="productos" class="scroll-mt-[72px] py-16 md:py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4 text-center text-gray-400">
-      <p class="text-sm uppercase tracking-wider">Productos -- Phase 3</p>
-    </div>
-  </section>
-
-  <section id="servicios" class="scroll-mt-[72px] py-16 md:py-20">
-    <div class="max-w-6xl mx-auto px-4 text-center text-gray-400">
-      <p class="text-sm uppercase tracking-wider">Servicios -- Phase 3</p>
-    </div>
-  </section>
-
-  <section id="valores" class="scroll-mt-[72px] py-16 md:py-20 bg-gray-50">
-    <div class="max-w-6xl mx-auto px-4 text-center text-gray-400">
-      <p class="text-sm uppercase tracking-wider">Valores -- Phase 3</p>
-    </div>
-  </section>
-
-  <section id="certificaciones" class="scroll-mt-[72px] py-16 md:py-20">
-    <div class="max-w-6xl mx-auto px-4 text-center text-gray-400">
-      <p class="text-sm uppercase tracking-wider">Certificaciones -- Phase 3</p>
-    </div>
-  </section>
-
+  <!-- Phase 4 placeholder -->
   <section id="contacto" class="scroll-mt-[72px] py-16 md:py-20 bg-gray-50">
     <div class="max-w-6xl mx-auto px-4 text-center text-gray-400">
       <p class="text-sm uppercase tracking-wider">Contacto -- Phase 4</p>
