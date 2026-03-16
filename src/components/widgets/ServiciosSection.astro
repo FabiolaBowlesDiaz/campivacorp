@@ -1,0 +1,31 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import { Icon } from 'astro-icon/components';
+
+const services = [
+  { icon: 'tabler:arrows-exchange', title: 'Trading', description: 'Comercializacion de materias primas y productos agroindustriales en mercados locales e internacionales.' },
+  { icon: 'tabler:handshake', title: 'Brokeraje', description: 'Intermediacion comercial especializada conectando productores con compradores estrategicos.' },
+  { icon: 'tabler:truck', title: 'Logistica local e internacional', description: 'Gestion integral de transporte y distribucion para garantizar la entrega oportuna de productos.' },
+  { icon: 'tabler:chart-line', title: 'Analitica de mercados y Soft Landing', description: 'Inteligencia de mercado y acompanamiento para la entrada exitosa en nuevos mercados regionales.' },
+  { icon: 'tabler:bulb', title: 'Asesoramiento tecnico y comercial', description: 'Consultoria especializada en procesos agroindustriales y estrategia comercial.' },
+  { icon: 'tabler:building-factory', title: 'Maquilas', description: 'Servicios de procesamiento y transformacion industrial bajo especificaciones del cliente.' },
+  { icon: 'tabler:microscope', title: 'Analisis de laboratorio via Surveyors', description: 'Control de calidad y certificacion de productos mediante laboratorios y surveyors acreditados.' },
+];
+---
+
+<WidgetWrapper id="servicios" containerClass="max-w-7xl">
+  <Headline
+    title="Servicios"
+    subtitle="Soluciones integrales para la cadena agroindustrial"
+  />
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {services.map((service) => (
+      <div class="bg-white rounded-lg p-6 border border-gray-100 hover:shadow-md transition-shadow duration-300">
+        <Icon name={service.icon} class="w-12 h-12 text-[#95b444] mb-4" />
+        <h3 class="font-heading font-bold text-lg mb-2">{service.title}</h3>
+        <p class="text-muted text-sm leading-relaxed">{service.description}</p>
+      </div>
+    ))}
+  </div>
+</WidgetWrapper>
