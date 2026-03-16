@@ -1,0 +1,34 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import { Icon } from 'astro-icon/components';
+
+const certifications = [
+  { name: 'HACCP', description: 'Analisis de Peligros y Puntos Criticos de Control' },
+  { name: 'GMP/BPM', description: 'Buenas Practicas de Manufactura' },
+  { name: 'ISO 9001', description: 'Sistema de Gestion de Calidad' },
+  { name: 'ISO 22000', description: 'Seguridad Alimentaria' },
+  { name: 'ISO 14001', description: 'Gestion Ambiental' },
+];
+---
+
+<WidgetWrapper id="certificaciones" isDark={true}>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-[#25272f]"></div>
+  </Fragment>
+  <Headline
+    title="Certificaciones"
+    classes={{ title: 'text-3xl md:text-4xl text-white', container: 'max-w-3xl' }}
+  />
+  <div class="flex flex-wrap justify-center gap-8 md:gap-12">
+    {certifications.map((cert) => (
+      <div class="flex flex-col items-center gap-3 text-center">
+        <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#95b444]/20 flex items-center justify-center">
+          <Icon name="tabler:shield-check" class="w-8 h-8 md:w-10 md:h-10 text-[#95b444]" />
+        </div>
+        <span class="text-white font-bold text-sm md:text-base">{cert.name}</span>
+        <span class="text-white/60 text-xs max-w-[120px]">{cert.description}</span>
+      </div>
+    ))}
+  </div>
+</WidgetWrapper>
