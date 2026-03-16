@@ -61,12 +61,12 @@ Plans:
   3. The Services section displays all 7 services (Trading, Brokeraje, Logistica, Analitica de mercados, Asesoramiento, Maquilas, Analisis de laboratorio) with icons and descriptions
   4. Values (Calidad, Respeto, Excelencia, Pasion) and Certifications (HACCP, GMP/BPM, ISO 9001, ISO 22000, ISO 14001) sections are visible with appropriate icons/badges
   5. The Corporate Purpose section displays exact text from the brief on a dark (#25272f) background for visual contrast
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 03-01: TBD
-- [ ] 03-02: TBD
-- [ ] 03-03: TBD
+- [ ] 03-01-PLAN.md -- Create NosotrosSection (two-column text+image) and ProductosSection (7-card accordion grid) widgets
+- [ ] 03-02-PLAN.md -- Create ServiciosSection, ValoresSection, CertificacionesSection, and PropositoSection widgets
+- [ ] 03-03-PLAN.md -- Wire all 6 content sections into index.astro, visual verification checkpoint
 
 ### Phase 4: Conversion + Polish
 **Goal**: The site is complete and shippable -- all CTAs lead to a working contact form, the footer closes the page, WhatsApp is one tap away, and the entire site is responsive with professional scroll animations
