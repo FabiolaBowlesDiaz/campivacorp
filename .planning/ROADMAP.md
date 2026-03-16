@@ -44,12 +44,12 @@ Plans:
   3. The mobile hamburger menu opens, shows all section links, and closes after a link is tapped
   4. Scrolling past the hero reveals 4 animated stat counters (25+ anos, 7 categorias, mercados regionales, 5 certificaciones) that count up from zero when entering the viewport
   5. The page works in production build (`npm run build && npm run preview`) -- Swiper initializes correctly, not just in dev mode
-**Plans**: TBD
+**Plans:** 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md -- Rewrite navigation.ts with flat anchor links, clean PageLayout.astro, add Swiper fade CSS
+- [ ] 02-02-PLAN.md -- Create HeroSlider.astro (Swiper) and StatsCounter.astro (IntersectionObserver) components
+- [ ] 02-03-PLAN.md -- Rewrite index.astro as single-page layout, visual verification checkpoint
 
 ### Phase 3: Content Sections
 **Goal**: The full page body is populated -- a visitor can scroll through About, Products, Services, Values, Certifications, and Corporate Purpose sections, understanding what campivacorp. does, what they sell, and why they are trustworthy
