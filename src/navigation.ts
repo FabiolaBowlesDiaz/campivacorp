@@ -1,6 +1,5 @@
 export const headerData = {
   links: [
-    { text: 'Inicio', href: '#inicio' },
     { text: 'Nosotros', href: '#nosotros' },
     { text: 'Productos', href: '#productos' },
     { text: 'Servicios', href: '#servicios' },
