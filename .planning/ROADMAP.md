@@ -28,7 +28,7 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. All headings render in Nunito Sans 800 and body text in Montserrat 500/700 -- Inter font is completely gone
   3. The campivacorp. SVG isotipo (3 overlapping leaves) renders correctly in at least one place (e.g., a test component or the default page)
   4. Blog routes return 404 or are removed, site title shows "campivacorp." in the browser tab, and no DaisyUI class conflicts appear in the console
-**Plans:** 2 plans
+**Plans:** 2/2 plans complete
 
 Plans:
 - [x] 01-01-PLAN.md -- Remove DaisyUI, install brand fonts, rewrite CSS variables and config.yaml, delete blog routes
@@ -92,7 +92,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 2/2 | Complete | 2026-03-15 |
+| 1. Foundation | 2/2 | Complete    | 2026-03-16 |
 | 2. Page Shell + Above the Fold | 0/3 | Not started | - |
 | 3. Content Sections | 0/3 | Not started | - |
 | 4. Conversion + Polish | 0/3 | Not started | - |
