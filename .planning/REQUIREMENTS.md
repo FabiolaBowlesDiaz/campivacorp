@@ -17,11 +17,11 @@
 
 ### Navigation
 
-- [ ] **NAV-01**: Fixed navbar with isotipo SVG + "campiva" bold + "corp." regular wordmark
-- [ ] **NAV-02**: Navbar links scroll to page sections (anchor navigation with smooth scroll)
-- [ ] **NAV-03**: CTA button "Contactanos" in #95b444 with hover #5d6f31
-- [ ] **NAV-04**: Mobile responsive hamburger menu with section links
-- [ ] **NAV-05**: Navbar background changes on scroll (transparent to solid)
+- [x] **NAV-01**: Fixed navbar with isotipo SVG + "campiva" bold + "corp." regular wordmark
+- [x] **NAV-02**: Navbar links scroll to page sections (anchor navigation with smooth scroll)
+- [x] **NAV-03**: CTA button "Contactanos" in #95b444 with hover #5d6f31
+- [x] **NAV-04**: Mobile responsive hamburger menu with section links
+- [x] **NAV-05**: Navbar background changes on scroll (transparent to solid)
 
 ### Hero
 
@@ -140,11 +140,11 @@
 | FOUN-05 | Phase 1 | Complete |
 | FOUN-06 | Phase 1 | Complete |
 | FOUN-07 | Phase 1 | Complete |
-| NAV-01 | Phase 2 | Pending |
-| NAV-02 | Phase 2 | Pending |
-| NAV-03 | Phase 2 | Pending |
-| NAV-04 | Phase 2 | Pending |
-| NAV-05 | Phase 2 | Pending |
+| NAV-01 | Phase 2 | Complete |
+| NAV-02 | Phase 2 | Complete |
+| NAV-03 | Phase 2 | Complete |
+| NAV-04 | Phase 2 | Complete |
+| NAV-05 | Phase 2 | Complete |
 | HERO-01 | Phase 2 | Complete |
 | HERO-02 | Phase 2 | Complete |
 | HERO-03 | Phase 2 | Complete |

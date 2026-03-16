@@ -13,7 +13,7 @@ Build a single-page corporate landing page for campivacorp., a Bolivian agroindu
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Brand theming, fonts, config, SVG assets, DaisyUI fix -- zero visible output, everything depends on it
-- [ ] **Phase 2: Page Shell + Above the Fold** - Navbar, hero slider, stats counters -- the first thing visitors see
+- [x] **Phase 2: Page Shell + Above the Fold** - Navbar, hero slider, stats counters -- the first thing visitors see
 - [ ] **Phase 3: Content Sections** - About, products, services, values, certifications, corporate purpose -- the full page body
 - [ ] **Phase 4: Conversion + Polish** - Contact form, footer, WhatsApp CTA, responsive behavior, animations -- the site ships
 
@@ -44,12 +44,12 @@ Plans:
   3. The mobile hamburger menu opens, shows all section links, and closes after a link is tapped
   4. Scrolling past the hero reveals 4 animated stat counters (25+ anos, 7 categorias, mercados regionales, 5 certificaciones) that count up from zero when entering the viewport
   5. The page works in production build (`npm run build && npm run preview`) -- Swiper initializes correctly, not just in dev mode
-**Plans:** 3 plans
+**Plans:** 3/3 plans complete
 
 Plans:
-- [ ] 02-01-PLAN.md -- Rewrite navigation.ts with flat anchor links, clean PageLayout.astro, add Swiper fade CSS
+- [x] 02-01-PLAN.md -- Rewrite navigation.ts with flat anchor links, clean PageLayout.astro, add Swiper fade CSS
 - [x] 02-02-PLAN.md -- Create HeroSlider.astro (Swiper) and StatsCounter.astro (IntersectionObserver) components
-- [ ] 02-03-PLAN.md -- Rewrite index.astro as single-page layout, visual verification checkpoint
+- [x] 02-03-PLAN.md -- Rewrite index.astro as single-page layout, visual verification checkpoint
 
 ### Phase 3: Content Sections
 **Goal**: The full page body is populated -- a visitor can scroll through About, Products, Services, Values, Certifications, and Corporate Purpose sections, understanding what campivacorp. does, what they sell, and why they are trustworthy
@@ -93,6 +93,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-16 |
-| 2. Page Shell + Above the Fold | 1/3 | In progress | - |
+| 2. Page Shell + Above the Fold | 3/3 | Complete | 2026-03-16 |
 | 3. Content Sections | 0/3 | Not started | - |
 | 4. Conversion + Polish | 0/3 | Not started | - |
