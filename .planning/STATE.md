@@ -5,33 +5,33 @@
 See: .planning/PROJECT.md (updated 2026-03-15)
 
 **Core value:** Present campivacorp. as a credible, premium agroindustrial trading partner through precise brand execution and comprehensive product/service information.
-**Current focus:** Phase 1: Foundation
+**Current focus:** Phase 2: Page Shell + Above the Fold
 
 ## Current Position
 
-Phase: 1 of 4 (Foundation)
-Plan: 1 of 2 in current phase
-Status: Executing
-Last activity: 2026-03-15 -- Completed 01-01 Brand Foundation (DaisyUI removal, brand tokens, Spanish config)
+Phase: 2 of 4 (Page Shell + Above the Fold)
+Plan: 1 of 3 in current phase
+Status: Ready
+Last activity: 2026-03-15 -- Completed 01-02 Logo + Brand Ornament (PNG isotipo, BrandOrnament component)
 
-Progress: [█░░░░░░░░░] 10%
+Progress: [██░░░░░░░░] 18%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 4 min
-- Total execution time: 0.07 hours
+- Total plans completed: 2
+- Average duration: 6 min
+- Total execution time: 0.20 hours
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-foundation | 1 | 4 min | 4 min |
+| 01-foundation | 2 | 12 min | 6 min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (4 min)
-- Trend: baseline
+- Last 5 plans: 01-01 (4 min), 01-02 (8 min)
+- Trend: stable
 
 *Updated after each plan completion*
 
@@ -47,6 +47,8 @@ Recent decisions affecting current work:
 - [01-01]: Removed DaisyUI entirely rather than fixing compatibility -- cascading Tailwind 3 conflicts
 - [01-01]: Deleted blog route pages but kept blog utils/components to avoid widget breakage
 - [01-01]: Brand tokens flow through CSS variables in CustomStyles.astro, consumed by tailwind.config.js
+- [01-02]: Used extracted PNG from brand book instead of hand-coded SVG for logo fidelity
+- [01-02]: BrandOrnament opacity at 6% (within 5-8% spec range)
 
 ### Pending Todos
 
@@ -60,5 +62,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-03-15
-Stopped at: Completed 01-01-PLAN.md (Brand Foundation)
-Resume file: .planning/phases/01-foundation/01-01-SUMMARY.md
+Stopped at: Completed 01-02-PLAN.md (Logo + Brand Ornament) -- Phase 1 Foundation COMPLETE
+Resume file: .planning/phases/01-foundation/01-02-SUMMARY.md

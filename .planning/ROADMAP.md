@@ -12,7 +12,7 @@ Build a single-page corporate landing page for campivacorp., a Bolivian agroindu
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation** - Brand theming, fonts, config, SVG assets, DaisyUI fix -- zero visible output, everything depends on it
+- [x] **Phase 1: Foundation** - Brand theming, fonts, config, SVG assets, DaisyUI fix -- zero visible output, everything depends on it
 - [ ] **Phase 2: Page Shell + Above the Fold** - Navbar, hero slider, stats counters -- the first thing visitors see
 - [ ] **Phase 3: Content Sections** - About, products, services, values, certifications, corporate purpose -- the full page body
 - [ ] **Phase 4: Conversion + Polish** - Contact form, footer, WhatsApp CTA, responsive behavior, animations -- the site ships
@@ -32,7 +32,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 Plans:
 - [x] 01-01-PLAN.md -- Remove DaisyUI, install brand fonts, rewrite CSS variables and config.yaml, delete blog routes
-- [ ] 01-02-PLAN.md -- Create SVG isotipo Logo.astro and BrandOrnament.astro decorative component
+- [x] 01-02-PLAN.md -- Create SVG isotipo Logo.astro and BrandOrnament.astro decorative component
 
 ### Phase 2: Page Shell + Above the Fold
 **Goal**: A visitor landing on the site sees a professional fixed navbar with the campivacorp. logo, a full-screen hero slider with three branded slides, and animated stat counters -- the complete first impression
@@ -92,7 +92,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 1/2 | In progress | - |
+| 1. Foundation | 2/2 | Complete | 2026-03-15 |
 | 2. Page Shell + Above the Fold | 0/3 | Not started | - |
 | 3. Content Sections | 0/3 | Not started | - |
 | 4. Conversion + Polish | 0/3 | Not started | - |
