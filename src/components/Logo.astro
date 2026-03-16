@@ -1,46 +1,16 @@
 ---
-// Logo.astro - campivacorp. SVG isotipo + wordmark
-// Renders inline: no props needed. Used by Header.astro via <Logo />
+// Logo.astro - campivacorp. logo from brand book
+// Uses extracted PNG with transparent background for pixel-perfect fidelity
+import logoFull from '~/assets/images/campivacorp-logo-full.png';
+import { Image } from 'astro:assets';
 ---
 
 <span class="flex items-center">
-  <svg
-    viewBox="0 0 48 48"
-    class="h-10 w-10"
-    xmlns="http://www.w3.org/2000/svg"
-    aria-hidden="true"
-  >
-    <!-- Left leaf: angled ~30deg left, primary green -->
-    <path
-      d="M24 38 C23 36, 16 28, 13 20 C10 12, 12 6, 16 5 C20 4, 23 10, 24 14 C25 18, 25 30, 24 38Z"
-      fill="#95b444"
-      stroke="#25272f"
-      stroke-width="0.5"
-    />
-    <!-- Right leaf: angled ~30deg right (mirror), primary green -->
-    <path
-      d="M24 38 C25 36, 32 28, 35 20 C38 12, 36 6, 32 5 C28 4, 25 10, 24 14 C23 18, 23 30, 24 38Z"
-      fill="#95b444"
-      stroke="#25272f"
-      stroke-width="0.5"
-    />
-    <!-- Central leaf: taller, vertical, dark green (renders on top) -->
-    <path
-      d="M24 40 C23 37, 20 28, 19 20 C18 12, 20 4, 24 3 C28 4, 30 12, 29 20 C28 28, 25 37, 24 40Z"
-      fill="#5d6f31"
-      stroke="#25272f"
-      stroke-width="0.5"
-    />
-    <!-- Stem/union at base -->
-    <path
-      d="M23 39 C23.5 41, 24 42, 24 42 C24 42, 24.5 41, 25 39"
-      fill="none"
-      stroke="#5d6f31"
-      stroke-width="1"
-      stroke-linecap="round"
-    />
-  </svg>
-  <span class="ml-2 text-xl">
-    <span class="font-heading font-extrabold text-[#25272f]">campiva</span><span class="font-heading font-normal text-[#25272f]">corp.</span>
-  </span>
+  <Image
+    src={logoFull}
+    alt="campivacorp."
+    class="h-9 w-auto"
+    widths={[200, 400]}
+    loading="eager"
+  />
 </span>
