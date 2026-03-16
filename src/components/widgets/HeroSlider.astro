@@ -1,0 +1,121 @@
+---
+// HeroSlider.astro - Swiper-based hero slider with 3 branded slides
+// Full-viewport, no WidgetWrapper. Swiper CSS imported globally in Layout.astro.
+---
+
+<section id="inicio">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1: Agricultural fields -->
+      <div class="swiper-slide relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#25272f] via-[#3a4020] to-[#5d6f31]"></div>
+        <div class="absolute inset-0 bg-[#25272f]/60"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4">
+          <h2 class="font-heading font-extrabold text-white text-3xl md:text-5xl lg:text-6xl mb-4 max-w-4xl">
+            Soluciones agroindustriales para el mundo
+          </h2>
+          <p class="font-sans text-white/80 text-lg md:text-xl mb-8 max-w-2xl">
+            Trading, brokeraje y logistica de productos agroindustriales
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#productos" class="bg-[#95b444] hover:bg-[#5d6f31] text-white font-bold px-8 py-3 rounded-md transition-colors">Ver Productos</a>
+            <a href="#contacto" class="border-2 border-white text-white hover:bg-white/10 font-bold px-8 py-3 rounded-md transition-colors">Contactar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2: Products/Processing -->
+      <div class="swiper-slide relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#25272f] to-[#2a3518]"></div>
+        <div class="absolute inset-0 bg-[#25272f]/60"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4">
+          <h2 class="font-heading font-extrabold text-white text-3xl md:text-5xl lg:text-6xl mb-4 max-w-4xl">
+            Calidad certificada en cada transaccion
+          </h2>
+          <p class="font-sans text-white/80 text-lg md:text-xl mb-8 max-w-2xl">
+            Estendares internacionales que garantizan la excelencia
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#productos" class="bg-[#95b444] hover:bg-[#5d6f31] text-white font-bold px-8 py-3 rounded-md transition-colors">Ver Productos</a>
+            <a href="#contacto" class="border-2 border-white text-white hover:bg-white/10 font-bold px-8 py-3 rounded-md transition-colors">Contactar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3: Global commerce -->
+      <div class="swiper-slide relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-[#1a1c23] to-[#25272f]"></div>
+        <div class="absolute inset-0 bg-[#25272f]/60"></div>
+        <div class="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-4">
+          <h2 class="font-heading font-extrabold text-white text-3xl md:text-5xl lg:text-6xl mb-4 max-w-4xl">
+            25 anos conectando mercados
+          </h2>
+          <p class="font-sans text-white/80 text-lg md:text-xl mb-8 max-w-2xl">
+            Experiencia y confianza en el comercio agroindustrial
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#productos" class="bg-[#95b444] hover:bg-[#5d6f31] text-white font-bold px-8 py-3 rounded-md transition-colors">Ver Productos</a>
+            <a href="#contacto" class="border-2 border-white text-white hover:bg-white/10 font-bold px-8 py-3 rounded-md transition-colors">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper controls -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<script>
+  import Swiper from 'swiper';
+  import { Navigation, Pagination, Autoplay, EffectFade } from 'swiper/modules';
+
+  let heroSwiperInstance: Swiper | null = null;
+
+  function initHeroSwiper() {
+    const el = document.querySelector('.hero-swiper');
+    if (!el) return;
+
+    // Destroy previous instance if exists (View Transitions cleanup)
+    if (heroSwiperInstance) {
+      heroSwiperInstance.destroy(true, true);
+      heroSwiperInstance = null;
+    }
+
+    heroSwiperInstance = new Swiper('.hero-swiper', {
+      modules: [Navigation, Pagination, Autoplay, EffectFade],
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      autoplay: { delay: 5000, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+      loop: true,
+    });
+  }
+
+  initHeroSwiper();
+  document.addEventListener('astro:after-swap', initHeroSwiper);
+</script>
+
+<style is:global>
+  .hero-swiper .swiper-pagination-bullet {
+    background: white;
+    opacity: 0.5;
+  }
+  .hero-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+  .hero-swiper .swiper-button-prev,
+  .hero-swiper .swiper-button-next {
+    color: white;
+    display: none;
+  }
+  @media (min-width: 768px) {
+    .hero-swiper .swiper-button-prev,
+    .hero-swiper .swiper-button-next {
+      display: flex;
+    }
+  }
+</style>
