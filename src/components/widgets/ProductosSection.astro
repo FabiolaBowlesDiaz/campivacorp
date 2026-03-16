@@ -1,0 +1,95 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import BrandOrnament from '~/components/ui/BrandOrnament.astro';
+import { Icon } from 'astro-icon/components';
+
+const categories = [
+  {
+    id: 'aceites',
+    name: 'Aceites',
+    icon: 'tabler:droplet',
+    products: ['Crudo de Soya', 'Crudo de Girasol', 'Refinado de Soya', 'Refinado de Girasol', 'Refinado Soya+Girasol Blend'],
+  },
+  {
+    id: 'harinas',
+    name: 'Harinas y Tortas',
+    icon: 'tabler:grain',
+    products: ['Harina de Soya Expeller', 'Torta de Soya Estandar', 'Torta de Soya HiPro', 'Torta de Girasol', 'Harina de Carne y Hueso', 'Harina de Plumas'],
+  },
+  {
+    id: 'granos',
+    name: 'Granos',
+    icon: 'tabler:plant',
+    products: ['Soya', 'Maiz', 'Sorgo', 'Mani', 'Quinua (blanca/negra/roja)', 'Chia', 'Sesamo (negro/blanco)', 'Cacao', 'Cafe'],
+  },
+  {
+    id: 'endulzantes',
+    name: 'Endulzantes',
+    icon: 'tabler:candy',
+    products: ['Azucar Refinada', 'Azucar Rubia', 'Miel de Abeja', 'Stevia'],
+  },
+  {
+    id: 'grasas',
+    name: 'Grasas',
+    icon: 'tabler:flask',
+    products: ['Mantecas y Margarinas', 'Sebo Bovino', 'Acidos Grasos', 'Oleinas Vegetales', 'Lecitina de Soya'],
+  },
+  {
+    id: 'forestales',
+    name: 'Derivados Forestales',
+    icon: 'tabler:tree',
+    products: ['Carbon Vegetal', 'Lena'],
+  },
+  {
+    id: 'hidrocarburos',
+    name: 'Hidrocarburos',
+    icon: 'tabler:gas-station',
+    products: ['Gasolina', 'Diesel ULSD'],
+  },
+];
+---
+
+<WidgetWrapper id="productos" containerClass="max-w-7xl mx-auto">
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-white"></div>
+    <BrandOrnament position="bottom-right" size={350} />
+  </Fragment>
+
+  <Headline title="Productos" subtitle="7 categorias de productos agroindustriales" />
+
+  <div class="flex flex-wrap justify-center gap-6">
+    {categories.map((cat) => (
+      <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]">
+        <div class="hs-accordion-group">
+          <div
+            class="hs-accordion bg-white rounded-lg border border-[#95b444]/20 shadow-sm hover:shadow-md transition-shadow"
+            id={`hs-productos-${cat.id}`}
+          >
+            <button
+              class="hs-accordion-toggle py-4 px-5 inline-flex items-center gap-x-3 w-full font-semibold text-start text-heading"
+              aria-expanded="false"
+              aria-controls={`hs-collapse-${cat.id}`}
+            >
+              <Icon name={cat.icon} class="w-8 h-8 text-[#95b444] flex-shrink-0" />
+              <span class="font-heading text-lg">{cat.name}</span>
+              <Icon name="tabler:chevron-down" class="hs-accordion-active:rotate-180 transition-transform w-5 h-5 ml-auto text-muted" />
+            </button>
+            <div
+              id={`hs-collapse-${cat.id}`}
+              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+              role="region"
+              aria-labelledby={`hs-productos-${cat.id}`}
+            >
+              <ul class="px-5 pb-4 space-y-1 text-muted text-sm">
+                {cat.products.map((p) => (
+                  <li>{p}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    ))}
+  </div>
+</WidgetWrapper>
