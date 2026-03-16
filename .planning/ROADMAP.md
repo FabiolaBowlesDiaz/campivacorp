@@ -48,7 +48,7 @@ Plans:
 
 Plans:
 - [ ] 02-01-PLAN.md -- Rewrite navigation.ts with flat anchor links, clean PageLayout.astro, add Swiper fade CSS
-- [ ] 02-02-PLAN.md -- Create HeroSlider.astro (Swiper) and StatsCounter.astro (IntersectionObserver) components
+- [x] 02-02-PLAN.md -- Create HeroSlider.astro (Swiper) and StatsCounter.astro (IntersectionObserver) components
 - [ ] 02-03-PLAN.md -- Rewrite index.astro as single-page layout, visual verification checkpoint
 
 ### Phase 3: Content Sections
@@ -93,6 +93,6 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 2/2 | Complete    | 2026-03-16 |
-| 2. Page Shell + Above the Fold | 0/3 | Not started | - |
+| 2. Page Shell + Above the Fold | 1/3 | In progress | - |
 | 3. Content Sections | 0/3 | Not started | - |
 | 4. Conversion + Polish | 0/3 | Not started | - |

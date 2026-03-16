@@ -25,18 +25,18 @@
 
 ### Hero
 
-- [ ] **HERO-01**: Swiper slider with 3 slides, overlay #25272f at 60% opacity
-- [ ] **HERO-02**: Slide 1 -- "Soluciones agroindustriales para el mundo" (agricultural fields)
-- [ ] **HERO-03**: Slide 2 -- "Calidad certificada en cada transaccion" (products)
-- [ ] **HERO-04**: Slide 3 -- "25 anos conectando mercados" (global commerce)
-- [ ] **HERO-05**: Dual CTAs on each slide: "Ver Productos" (secondary) + "Contactar" (primary)
-- [ ] **HERO-06**: Autoplay with pagination dots, navigation arrows on desktop
+- [x] **HERO-01**: Swiper slider with 3 slides, overlay #25272f at 60% opacity
+- [x] **HERO-02**: Slide 1 -- "Soluciones agroindustriales para el mundo" (agricultural fields)
+- [x] **HERO-03**: Slide 2 -- "Calidad certificada en cada transaccion" (products)
+- [x] **HERO-04**: Slide 3 -- "25 anos conectando mercados" (global commerce)
+- [x] **HERO-05**: Dual CTAs on each slide: "Ver Productos" (secondary) + "Contactar" (primary)
+- [x] **HERO-06**: Autoplay with pagination dots, navigation arrows on desktop
 
 ### Stats
 
-- [ ] **STAT-01**: Animated counter section with AOS scroll trigger
-- [ ] **STAT-02**: 4 stats displayed: 25+ anos, 7 categorias de productos, Mercados regionales, 5 certificaciones
-- [ ] **STAT-03**: Counter animation counts up from 0 on viewport entry
+- [x] **STAT-01**: Animated counter section with AOS scroll trigger
+- [x] **STAT-02**: 4 stats displayed: 25+ anos, 7 categorias de productos, Mercados regionales, 5 certificaciones
+- [x] **STAT-03**: Counter animation counts up from 0 on viewport entry
 
 ### About
 
@@ -145,15 +145,15 @@
 | NAV-03 | Phase 2 | Pending |
 | NAV-04 | Phase 2 | Pending |
 | NAV-05 | Phase 2 | Pending |
-| HERO-01 | Phase 2 | Pending |
-| HERO-02 | Phase 2 | Pending |
-| HERO-03 | Phase 2 | Pending |
-| HERO-04 | Phase 2 | Pending |
-| HERO-05 | Phase 2 | Pending |
-| HERO-06 | Phase 2 | Pending |
-| STAT-01 | Phase 2 | Pending |
-| STAT-02 | Phase 2 | Pending |
-| STAT-03 | Phase 2 | Pending |
+| HERO-01 | Phase 2 | Complete |
+| HERO-02 | Phase 2 | Complete |
+| HERO-03 | Phase 2 | Complete |
+| HERO-04 | Phase 2 | Complete |
+| HERO-05 | Phase 2 | Complete |
+| HERO-06 | Phase 2 | Complete |
+| STAT-01 | Phase 2 | Complete |
+| STAT-02 | Phase 2 | Complete |
+| STAT-03 | Phase 2 | Complete |
 | ABOU-01 | Phase 3 | Pending |
 | ABOU-02 | Phase 3 | Pending |
 | ABOU-03 | Phase 3 | Pending |
