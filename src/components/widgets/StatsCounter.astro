@@ -1,0 +1,73 @@
+---
+// StatsCounter.astro - Animated stat counters on dark background
+// Uses IntersectionObserver for count-up animation (NOT AOS — avoids Swiper conflict)
+---
+
+<section id="stats" class="bg-[#25272f] py-16 md:py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 text-center">
+      <div class="stat-item" data-target="25" data-suffix="+">
+        <span class="stat-number font-heading font-extrabold text-white text-4xl md:text-5xl lg:text-6xl block">0</span>
+        <span class="font-sans font-medium text-white/70 text-sm md:text-base mt-2 block">Años de experiencia</span>
+      </div>
+      <div class="stat-item" data-target="7" data-suffix="">
+        <span class="stat-number font-heading font-extrabold text-white text-4xl md:text-5xl lg:text-6xl block">0</span>
+        <span class="font-sans font-medium text-white/70 text-sm md:text-base mt-2 block">Categorías de productos</span>
+      </div>
+      <div class="stat-item" data-target="5" data-suffix="">
+        <span class="stat-number font-heading font-extrabold text-white text-4xl md:text-5xl lg:text-6xl block">0</span>
+        <span class="font-sans font-medium text-white/70 text-sm md:text-base mt-2 block">Certificaciones internacionales</span>
+      </div>
+      <div class="stat-item" data-target="100" data-suffix="%">
+        <span class="stat-number font-heading font-extrabold text-white text-4xl md:text-5xl lg:text-6xl block">0</span>
+        <span class="font-sans font-medium text-white/70 text-sm md:text-base mt-2 block">Compromiso con la calidad</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function easeOutQuart(t: number): number {
+    return 1 - Math.pow(1 - t, 4);
+  }
+
+  function animateCounter(el: HTMLElement, target: number, suffix: string, duration: number = 2000) {
+    const start = performance.now();
+    function update(now: number) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const value = Math.round(easeOutQuart(progress) * target);
+      el.textContent = value + suffix;
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      }
+    }
+    requestAnimationFrame(update);
+  }
+
+  function initStatsObserver() {
+    const items = document.querySelectorAll('.stat-item');
+    if (!items.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const item = entry.target as HTMLElement;
+            const numberEl = item.querySelector('.stat-number') as HTMLElement;
+            const target = parseInt(item.dataset.target || '0', 10);
+            const suffix = item.dataset.suffix || '';
+            animateCounter(numberEl, target, suffix);
+            observer.unobserve(item);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+
+    items.forEach((item) => observer.observe(item));
+  }
+
+  initStatsObserver();
+  document.addEventListener('astro:after-swap', initStatsObserver);
+</script>
