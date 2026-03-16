@@ -40,16 +40,16 @@
 
 ### About
 
-- [ ] **ABOU-01**: "Quienes Somos" section with exact corporate text from brief
-- [ ] **ABOU-02**: Placeholder image (agricultural/industrial theme)
-- [ ] **ABOU-03**: Brand ornament leaf shapes in background at low opacity
+- [x] **ABOU-01**: "Quienes Somos" section with exact corporate text from brief
+- [x] **ABOU-02**: Placeholder image (agricultural/industrial theme)
+- [x] **ABOU-03**: Brand ornament leaf shapes in background at low opacity
 
 ### Products
 
-- [ ] **PROD-01**: Grid of 7 product category cards (Aceites, Harinas y Tortas, Granos, Endulzantes, Grasas, Derivados Forestales, Hidrocarburos)
-- [ ] **PROD-02**: Each card has thematic SVG icon, category name, and list of specific products
-- [ ] **PROD-03**: Cards styled with #95b444 border or subtle shadow, hover effect
-- [ ] **PROD-04**: Expandable/accordion sub-detail showing all products within each category
+- [x] **PROD-01**: Grid of 7 product category cards (Aceites, Harinas y Tortas, Granos, Endulzantes, Grasas, Derivados Forestales, Hidrocarburos)
+- [x] **PROD-02**: Each card has thematic SVG icon, category name, and list of specific products
+- [x] **PROD-03**: Cards styled with #95b444 border or subtle shadow, hover effect
+- [x] **PROD-04**: Expandable/accordion sub-detail showing all products within each category
 
 ### Services
 
@@ -154,13 +154,13 @@
 | STAT-01 | Phase 2 | Complete |
 | STAT-02 | Phase 2 | Complete |
 | STAT-03 | Phase 2 | Complete |
-| ABOU-01 | Phase 3 | Pending |
-| ABOU-02 | Phase 3 | Pending |
-| ABOU-03 | Phase 3 | Pending |
-| PROD-01 | Phase 3 | Pending |
-| PROD-02 | Phase 3 | Pending |
-| PROD-03 | Phase 3 | Pending |
-| PROD-04 | Phase 3 | Pending |
+| ABOU-01 | Phase 3 | Complete |
+| ABOU-02 | Phase 3 | Complete |
+| ABOU-03 | Phase 3 | Complete |
+| PROD-01 | Phase 3 | Complete |
+| PROD-02 | Phase 3 | Complete |
+| PROD-03 | Phase 3 | Complete |
+| PROD-04 | Phase 3 | Complete |
 | SERV-01 | Phase 3 | Complete |
 | SERV-02 | Phase 3 | Complete |
 | VALU-01 | Phase 3 | Complete |
