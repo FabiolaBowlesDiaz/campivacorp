@@ -7,13 +7,13 @@ export const headerData = {
     { text: 'Certificaciones', href: '#certificaciones' },
     { text: 'Contacto', href: '#contacto' },
   ],
-  actions: [{ text: 'Contactanos', href: '#contacto', variant: 'primary' }],
+  actions: [{ text: 'Contáctanos', href: '#contacto', variant: 'primary' }],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Navegacion',
+      title: 'Navegación',
       links: [
         { text: 'Nosotros', href: '#nosotros' },
         { text: 'Productos', href: '#productos' },
