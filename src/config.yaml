@@ -1,7 +1,7 @@
 site:
   name: 'campivacorp.'
-  site: 'https://campivacorp.com'
-  base: '/'
+  site: 'https://FabiolaBowlesDiaz.github.io'
+  base: '/campivacorp'
   trailingSlash: false
 
 metadata:

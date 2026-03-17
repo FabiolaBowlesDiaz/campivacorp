@@ -22,6 +22,8 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
   hasExternalScripts ? (Array.isArray(items) ? items.map((item) => item()) : [items()]) : [];
 
 export default defineConfig({
+  site: 'https://FabiolaBowlesDiaz.github.io',
+  base: '/campivacorp',
   output: 'static',
 
   integrations: [
