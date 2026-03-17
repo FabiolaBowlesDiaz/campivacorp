@@ -6,123 +6,119 @@ import { Icon } from 'astro-icon/components';
 
 <WidgetWrapper id="contacto" containerClass="max-w-7xl mx-auto">
   <div data-aos="fade-up">
-    <Headline title="Contactanos" subtitle="Estamos para ayudarte" />
+    <Headline title="Contáctanos" subtitle="Estamos listos para ser tu socio estratégico" />
   </div>
 
-  <div class="grid md:grid-cols-2 gap-12">
-    <!-- LEFT: Contact form -->
-    <div data-aos="fade-up" data-aos-delay="100">
+  <div class="grid md:grid-cols-5 gap-0 rounded-xl overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="100">
+    <!-- LEFT: Contact form (3/5 width) -->
+    <div class="md:col-span-3 bg-white p-8 md:p-10">
       <!-- Replace YOUR_ID with your Formspree form ID from https://formspree.io -->
       <form action="https://formspree.io/f/YOUR_ID" method="POST" class="space-y-5">
         <input type="hidden" name="_next" value="/#contacto" />
         <input type="hidden" name="_subject" value="Nuevo contacto desde campivacorp.com" />
 
-        <div>
-          <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Nombre *</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            class="py-3 px-4 block w-full rounded-lg border border-gray-200 text-sm focus:border-primary focus:ring-1 focus:ring-primary bg-white"
-            placeholder="Tu nombre"
-          />
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label for="name" class="block text-sm font-medium text-[#25272f] mb-1.5">Nombre <span class="text-[#95b444]">*</span></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="h-11 px-4 block w-full rounded-lg border border-gray-200 text-sm focus:border-[#95b444] focus:ring-2 focus:ring-[#95b444]/20 focus:outline-none bg-[#f7f8f2]/50 transition-colors"
+              placeholder="Tu nombre"
+            />
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-[#25272f] mb-1.5">Email <span class="text-[#95b444]">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="h-11 px-4 block w-full rounded-lg border border-gray-200 text-sm focus:border-[#95b444] focus:ring-2 focus:ring-[#95b444]/20 focus:outline-none bg-[#f7f8f2]/50 transition-colors"
+              placeholder="tu@email.com"
+            />
+          </div>
         </div>
 
         <div>
-          <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email *</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            required
-            class="py-3 px-4 block w-full rounded-lg border border-gray-200 text-sm focus:border-primary focus:ring-1 focus:ring-primary bg-white"
-            placeholder="tu@email.com"
-          />
-        </div>
-
-        <div>
-          <label for="company" class="block text-sm font-medium text-gray-700 mb-1">Empresa</label>
+          <label for="company" class="block text-sm font-medium text-[#25272f] mb-1.5">Empresa</label>
           <input
             type="text"
             id="company"
             name="company"
-            class="py-3 px-4 block w-full rounded-lg border border-gray-200 text-sm focus:border-primary focus:ring-1 focus:ring-primary bg-white"
+            class="h-11 px-4 block w-full rounded-lg border border-gray-200 text-sm focus:border-[#95b444] focus:ring-2 focus:ring-[#95b444]/20 focus:outline-none bg-[#f7f8f2]/50 transition-colors"
             placeholder="Tu empresa"
           />
         </div>
 
         <div>
-          <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Mensaje *</label>
+          <label for="message" class="block text-sm font-medium text-[#25272f] mb-1.5">Mensaje <span class="text-[#95b444]">*</span></label>
           <textarea
             id="message"
             name="message"
             rows="4"
             required
-            class="py-3 px-4 block w-full rounded-lg border border-gray-200 text-sm focus:border-primary focus:ring-1 focus:ring-primary bg-white"
-            placeholder="Como podemos ayudarte?"
+            class="py-3 px-4 block w-full rounded-lg border border-gray-200 text-sm focus:border-[#95b444] focus:ring-2 focus:ring-[#95b444]/20 focus:outline-none bg-[#f7f8f2]/50 transition-colors resize-none"
+            placeholder="¿Cómo podemos ayudarte?"
           ></textarea>
         </div>
 
         <button
           type="submit"
-          class="w-full py-3 px-6 rounded-lg bg-primary text-white font-semibold hover:bg-secondary transition-colors"
+          class="w-full h-12 rounded-lg bg-[#95b444] text-white font-semibold hover:bg-[#5d6f31] transition-colors cursor-pointer text-sm tracking-wide"
         >
           Enviar Mensaje
         </button>
       </form>
     </div>
 
-    <!-- RIGHT: Contact info -->
-    <div class="flex flex-col justify-center space-y-8" data-aos="fade-up" data-aos-delay="200">
-      <div class="flex items-start gap-4">
-        <Icon name="tabler:mail" class="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-        <div>
-          <p class="font-medium text-gray-900">Email</p>
-          <a href="mailto:rcampbell@campivacorp.com" class="text-muted hover:text-primary transition-colors">
-            rcampbell@campivacorp.com
-          </a>
-        </div>
-      </div>
+    <!-- RIGHT: Contact info panel (2/5 width) — dark branded bg -->
+    <div class="md:col-span-2 bg-[#25272f] p-8 md:p-10 flex flex-col justify-center">
+      <h3 class="font-heading font-bold text-white text-lg mb-2">Información de contacto</h3>
+      <p class="text-white/60 text-sm mb-8">Comunícate con nosotros a través de cualquiera de estos canales.</p>
 
-      <div class="flex items-start gap-4">
-        <Icon name="tabler:phone" class="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-        <div>
-          <p class="font-medium text-gray-900">Telefono</p>
-          <a href="tel:+59169006424" class="text-muted hover:text-primary transition-colors">
-            +591 69006424
-          </a>
-        </div>
-      </div>
+      <div class="space-y-6">
+        <a href="mailto:rcampbell@campivacorp.com" class="flex items-center gap-4 group cursor-pointer">
+          <div class="w-10 h-10 rounded-lg bg-[#95b444]/15 flex items-center justify-center flex-shrink-0 group-hover:bg-[#95b444]/25 transition-colors">
+            <Icon name="tabler:mail" class="w-5 h-5 text-[#95b444]" />
+          </div>
+          <div>
+            <p class="text-white/50 text-xs uppercase tracking-wider">Email</p>
+            <p class="text-white text-sm group-hover:text-[#cbdc53] transition-colors">rcampbell@campivacorp.com</p>
+          </div>
+        </a>
 
-      <div class="flex items-start gap-4">
-        <Icon name="tabler:brand-linkedin" class="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-        <div>
-          <p class="font-medium text-gray-900">LinkedIn</p>
-          <a
-            href="https://www.linkedin.com/company/campivacorp/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-muted hover:text-primary transition-colors"
-          >
-            campivacorp
-          </a>
-        </div>
-      </div>
+        <a href="tel:+59169006424" class="flex items-center gap-4 group cursor-pointer">
+          <div class="w-10 h-10 rounded-lg bg-[#95b444]/15 flex items-center justify-center flex-shrink-0 group-hover:bg-[#95b444]/25 transition-colors">
+            <Icon name="tabler:phone" class="w-5 h-5 text-[#95b444]" />
+          </div>
+          <div>
+            <p class="text-white/50 text-xs uppercase tracking-wider">Teléfono</p>
+            <p class="text-white text-sm group-hover:text-[#cbdc53] transition-colors">+591 69006424</p>
+          </div>
+        </a>
 
-      <div class="flex items-start gap-4">
-        <Icon name="tabler:brand-whatsapp" class="w-6 h-6 text-primary flex-shrink-0 mt-1" />
-        <div>
-          <p class="font-medium text-gray-900">WhatsApp</p>
-          <a
-            href="https://wa.me/59169006424"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="text-muted hover:text-primary transition-colors"
-          >
-            +591 69006424
-          </a>
-        </div>
+        <a href="https://www.linkedin.com/company/campivacorp/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 group cursor-pointer">
+          <div class="w-10 h-10 rounded-lg bg-[#95b444]/15 flex items-center justify-center flex-shrink-0 group-hover:bg-[#95b444]/25 transition-colors">
+            <Icon name="tabler:brand-linkedin" class="w-5 h-5 text-[#95b444]" />
+          </div>
+          <div>
+            <p class="text-white/50 text-xs uppercase tracking-wider">LinkedIn</p>
+            <p class="text-white text-sm group-hover:text-[#cbdc53] transition-colors">campivacorp</p>
+          </div>
+        </a>
+
+        <a href="https://wa.me/59169006424?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20productos%20de%20campivacorp." target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 group cursor-pointer">
+          <div class="w-10 h-10 rounded-lg bg-[#95b444]/15 flex items-center justify-center flex-shrink-0 group-hover:bg-[#95b444]/25 transition-colors">
+            <Icon name="tabler:brand-whatsapp" class="w-5 h-5 text-[#95b444]" />
+          </div>
+          <div>
+            <p class="text-white/50 text-xs uppercase tracking-wider">WhatsApp</p>
+            <p class="text-white text-sm group-hover:text-[#cbdc53] transition-colors">+591 69006424</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
