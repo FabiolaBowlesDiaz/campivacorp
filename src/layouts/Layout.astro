@@ -72,9 +72,9 @@ const { language, textDirection } = I18N;
 
     <!-- Preline UI -->
     <script>
-      import('preline');
-
-      function initPreline() {
+      async function initPreline() {
+        // Ensure preline is loaded before calling autoInit
+        await import('preline');
         // @ts-ignore
         if (window.HSStaticMethods) {
           // @ts-ignore
@@ -82,9 +82,12 @@ const { language, textDirection } = I18N;
         }
       }
 
-      window.addEventListener('load', initPreline);
+      // Init on first load
+      initPreline();
+
+      // Re-init on View Transitions
       document.addEventListener('astro:after-swap', () => {
-        setTimeout(initPreline, 100);
+        setTimeout(initPreline, 150);
       });
     </script>
   </body>
