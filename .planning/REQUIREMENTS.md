@@ -73,18 +73,18 @@
 
 ### Contact
 
-- [ ] **CONT-01**: Contact form with fields: name, email, company, message
-- [ ] **CONT-02**: Contact info displayed: rcampbell@campivacorp.com, +59169006424
-- [ ] **CONT-03**: Social media links: Facebook, WhatsApp, Instagram, LinkedIn
-- [ ] **CONT-04**: WhatsApp floating CTA button (fixed bottom-right, persistent across all sections)
-- [ ] **CONT-05**: Form submission handler (Formspree, Netlify Forms, or mailto: fallback)
+- [x] **CONT-01**: Contact form with fields: name, email, company, message
+- [x] **CONT-02**: Contact info displayed: rcampbell@campivacorp.com, +59169006424
+- [x] **CONT-03**: Social media links: LinkedIn, WhatsApp (FB/IG omitted per user decision)
+- [x] **CONT-04**: WhatsApp floating CTA button (fixed bottom-right, persistent across all sections)
+- [x] **CONT-05**: Form submission handler (Formspree, Netlify Forms, or mailto: fallback)
 
 ### Footer
 
-- [ ] **FOOT-01**: Footer with campivacorp. brand (isotipo + wordmark)
-- [ ] **FOOT-02**: Navigation links mirroring navbar sections
-- [ ] **FOOT-03**: Social media icons (Facebook, WhatsApp, Instagram, LinkedIn)
-- [ ] **FOOT-04**: Copyright notice with current year
+- [x] **FOOT-01**: Footer with campivacorp. brand (isotipo + wordmark)
+- [x] **FOOT-02**: Navigation links mirroring navbar sections
+- [x] **FOOT-03**: Social media icons: LinkedIn, WhatsApp (FB/IG omitted per user decision)
+- [x] **FOOT-04**: Copyright notice with current year
 
 ### Responsive
 
@@ -169,15 +169,15 @@
 | CERT-02 | Phase 3 | Complete |
 | PURP-01 | Phase 3 | Complete |
 | PURP-02 | Phase 3 | Complete |
-| CONT-01 | Phase 4 | Pending |
-| CONT-02 | Phase 4 | Pending |
-| CONT-03 | Phase 4 | Pending |
-| CONT-04 | Phase 4 | Pending |
-| CONT-05 | Phase 4 | Pending |
-| FOOT-01 | Phase 4 | Pending |
-| FOOT-02 | Phase 4 | Pending |
-| FOOT-03 | Phase 4 | Pending |
-| FOOT-04 | Phase 4 | Pending |
+| CONT-01 | Phase 4 | Complete |
+| CONT-02 | Phase 4 | Complete |
+| CONT-03 | Phase 4 | Complete |
+| CONT-04 | Phase 4 | Complete |
+| CONT-05 | Phase 4 | Complete |
+| FOOT-01 | Phase 4 | Complete |
+| FOOT-02 | Phase 4 | Complete |
+| FOOT-03 | Phase 4 | Complete |
+| FOOT-04 | Phase 4 | Complete |
 | RESP-01 | Phase 4 | Pending |
 | RESP-02 | Phase 4 | Pending |
 | RESP-03 | Phase 4 | Pending |

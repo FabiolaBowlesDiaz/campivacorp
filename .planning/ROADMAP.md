@@ -81,7 +81,7 @@ Plans:
 **Plans:** 2 plans
 
 Plans:
-- [ ] 04-01-PLAN.md -- Create ContactoSection (form + info), WhatsAppButton, populate footerData in navigation.ts
+- [x] 04-01-PLAN.md -- Create ContactoSection (form + info), WhatsAppButton, populate footerData in navigation.ts
 - [ ] 04-02-PLAN.md -- Add AOS fade-up animations to all content sections, final visual and responsive verification
 
 ## Progress
@@ -94,4 +94,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Foundation | 2/2 | Complete    | 2026-03-16 |
 | 2. Page Shell + Above the Fold | 3/3 | Complete    | 2026-03-16 |
 | 3. Content Sections | 3/3 | Complete    | 2026-03-17 |
-| 4. Conversion + Polish | 0/2 | Not started | - |
+| 4. Conversion + Polish | 1/2 | In progress | - |
