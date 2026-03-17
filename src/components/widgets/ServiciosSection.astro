@@ -18,13 +18,15 @@ const services = [
   <Fragment slot="bg">
     <div class="absolute inset-0 bg-white"></div>
   </Fragment>
-  <Headline
-    title="Servicios"
-    subtitle="Soluciones integrales para la cadena agroindustrial"
-  />
+  <div data-aos="fade-up">
+    <Headline
+      title="Servicios"
+      subtitle="Soluciones integrales para la cadena agroindustrial"
+    />
+  </div>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {services.map((service) => (
-      <div class="bg-white rounded-lg p-6 border border-gray-100 hover:shadow-md transition-shadow duration-300">
+    {services.map((service, index) => (
+      <div class="bg-white rounded-lg p-6 border border-gray-100 hover:shadow-md transition-shadow duration-300" data-aos="fade-up" data-aos-delay={String(index * 100)}>
         <Icon name={service.icon} class="w-12 h-12 text-[#95b444] mb-4" />
         <h3 class="font-heading font-bold text-lg mb-2">{service.title}</h3>
         <p class="text-muted text-sm leading-relaxed">{service.description}</p>

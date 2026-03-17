@@ -11,18 +11,20 @@ import BrandOrnament from '~/components/ui/BrandOrnament.astro';
     <BrandOrnament position="bottom-left" size={350} />
   </Fragment>
 
-  <Headline title="Quienes Somos" />
+  <div data-aos="fade-up">
+    <Headline title="Quienes Somos" />
+  </div>
 
   <div class="md:flex md:gap-16">
     <!-- Left column: corporate text -->
-    <div class="md:basis-1/2 self-center">
+    <div class="md:basis-1/2 self-center" data-aos="fade-up" data-aos-delay="100">
       <p class="text-base text-muted leading-relaxed">
         Somos una empresa cuyos fundadores tienen mas de 25 anos de experiencia en la industria de oleos, derivados y subproductos; nutricion humana con productos agroindustriales y nutricion animal. Enfocados en brindar soluciones de alimentacion humana y animal, con transacciones tanto locales como internacionales, atendiendo diversos mercados de la region. Nuestros socios estrategicos y nosotros cumplimos con los estandares mas exigentes de inocuidad, calidad, trazabilidad y medio ambiente; monitoreando a todos los participantes de nuestra cadena de valor desde la produccion en campo, transformacion industrial, almacenamiento y logistica, centrando al productor primario y el cliente final como el centro de nuestra estrategia corporativa.
       </p>
     </div>
 
     <!-- Right column: placeholder image -->
-    <div class="mt-10 md:mt-0 md:basis-1/2">
+    <div class="mt-10 md:mt-0 md:basis-1/2" data-aos="fade-up" data-aos-delay="200">
       <div class="w-full h-64 md:h-80 rounded-lg bg-[#95b444]/20 flex items-center justify-center">
         <span class="text-[#95b444]/60 text-lg font-medium">Imagen</span>
       </div>

@@ -5,11 +5,13 @@ import { Icon } from 'astro-icon/components';
 ---
 
 <WidgetWrapper id="contacto" containerClass="max-w-7xl mx-auto">
-  <Headline title="Contactanos" subtitle="Estamos para ayudarte" />
+  <div data-aos="fade-up">
+    <Headline title="Contactanos" subtitle="Estamos para ayudarte" />
+  </div>
 
   <div class="grid md:grid-cols-2 gap-12">
     <!-- LEFT: Contact form -->
-    <div>
+    <div data-aos="fade-up" data-aos-delay="100">
       <!-- Replace YOUR_ID with your Formspree form ID from https://formspree.io -->
       <form action="https://formspree.io/f/YOUR_ID" method="POST" class="space-y-5">
         <input type="hidden" name="_next" value="/#contacto" />
@@ -72,7 +74,7 @@ import { Icon } from 'astro-icon/components';
     </div>
 
     <!-- RIGHT: Contact info -->
-    <div class="flex flex-col justify-center space-y-8">
+    <div class="flex flex-col justify-center space-y-8" data-aos="fade-up" data-aos-delay="200">
       <div class="flex items-start gap-4">
         <Icon name="tabler:mail" class="w-6 h-6 text-primary flex-shrink-0 mt-1" />
         <div>
