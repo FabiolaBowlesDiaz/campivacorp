@@ -2,6 +2,8 @@
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Headline from '~/components/ui/Headline.astro';
 import BrandOrnament from '~/components/ui/BrandOrnament.astro';
+import { Image } from 'astro:assets';
+import quienesImg from '~/assets/images/quienes-somos.jpg';
 ---
 
 <WidgetWrapper id="nosotros" containerClass="max-w-7xl mx-auto">
@@ -23,11 +25,15 @@ import BrandOrnament from '~/components/ui/BrandOrnament.astro';
       </p>
     </div>
 
-    <!-- Right column: placeholder image -->
+    <!-- Right column: agricultural image -->
     <div class="mt-10 md:mt-0 md:basis-1/2" data-aos="fade-up" data-aos-delay="200">
-      <div class="w-full h-64 md:h-80 rounded-lg bg-[#95b444]/20 flex items-center justify-center">
-        <span class="text-[#95b444]/60 text-lg font-medium">Imagen</span>
-      </div>
+      <Image
+        src={quienesImg}
+        alt="Campos agrícolas - campivacorp."
+        class="w-full h-64 md:h-80 rounded-lg object-cover shadow-md"
+        widths={[400, 800]}
+        loading="lazy"
+      />
     </div>
   </div>
 </WidgetWrapper>
