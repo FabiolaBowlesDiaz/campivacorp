@@ -78,12 +78,11 @@ Plans:
   3. The footer displays campivacorp. brand (isotipo + wordmark), navigation links mirroring the navbar, social media icons, and copyright with current year
   4. All sections are responsive: product grid adapts columns (1/2/3-4 across mobile/tablet/desktop), hero text and CTAs scale for mobile, and no horizontal overflow or broken layouts at 320px width
   5. AOS fade-up animations trigger on scroll for cards, stats, and text blocks across all sections, with no AOS inside the Swiper container, and all animations are subtle and professional
-**Plans**: TBD
+**Plans:** 2 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
-- [ ] 04-03: TBD
+- [ ] 04-01-PLAN.md -- Create ContactoSection (form + info), WhatsAppButton, populate footerData in navigation.ts
+- [ ] 04-02-PLAN.md -- Add AOS fade-up animations to all content sections, final visual and responsive verification
 
 ## Progress
 
@@ -95,4 +94,4 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 | 1. Foundation | 2/2 | Complete    | 2026-03-16 |
 | 2. Page Shell + Above the Fold | 3/3 | Complete    | 2026-03-16 |
 | 3. Content Sections | 3/3 | Complete    | 2026-03-17 |
-| 4. Conversion + Polish | 0/3 | Not started | - |
+| 4. Conversion + Polish | 0/2 | Not started | - |
