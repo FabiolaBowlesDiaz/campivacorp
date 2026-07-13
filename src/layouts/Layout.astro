@@ -1,10 +1,6 @@
 ---
 import '~/assets/styles/tailwind.css';
 import 'aos/dist/aos.css';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-fade';
 
 import { I18N } from 'astrowind:config';
 
@@ -70,25 +66,5 @@ const { language, textDirection } = I18N;
       document.addEventListener('astro:after-swap', initAOS);
     </script>
 
-    <!-- Preline UI -->
-    <script>
-      async function initPreline() {
-        // Ensure preline is loaded before calling autoInit
-        await import('preline');
-        // @ts-ignore
-        if (window.HSStaticMethods) {
-          // @ts-ignore
-          window.HSStaticMethods.autoInit();
-        }
-      }
-
-      // Init on first load
-      initPreline();
-
-      // Re-init on View Transitions
-      document.addEventListener('astro:after-swap', () => {
-        setTimeout(initPreline, 150);
-      });
-    </script>
   </body>
 </html>

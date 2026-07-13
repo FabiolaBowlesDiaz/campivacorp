@@ -4,11 +4,11 @@ import Headline from '~/components/ui/Headline.astro';
 import { Icon } from 'astro-icon/components';
 
 const certifications = [
-  { name: 'HACCP', description: 'Análisis de Peligros y Puntos Críticos de Control' },
-  { name: 'GMP/BPM', description: 'Buenas Prácticas de Manufactura' },
-  { name: 'ISO 9001', description: 'Sistema de Gestión de Calidad' },
-  { name: 'ISO 22000', description: 'Seguridad Alimentaria' },
-  { name: 'ISO 14001', description: 'Gestión Ambiental' },
+  { name: 'HACCP', description: 'Análisis de Peligros y Puntos Críticos de Control', icon: 'tabler:shield-check' },
+  { name: 'GMP/BPM', description: 'Buenas Prácticas de Manufactura', icon: 'tabler:clipboard-check' },
+  { name: 'ISO 9001', description: 'Sistema de Gestión de Calidad', icon: 'tabler:award' },
+  { name: 'ISO 22000', description: 'Seguridad Alimentaria', icon: 'tabler:apple' },
+  { name: 'ISO 14001', description: 'Gestión Ambiental', icon: 'tabler:leaf' },
 ];
 ---
 
@@ -27,7 +27,7 @@ const certifications = [
     {certifications.map((cert, index) => (
       <div class="flex flex-col items-center gap-3 text-center" data-aos="fade-up" data-aos-delay={String(index * 100)}>
         <div class="w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#95b444]/20 flex items-center justify-center">
-          <Icon name="tabler:shield-check" class="w-8 h-8 md:w-10 md:h-10 text-[#95b444]" />
+          <Icon name={cert.icon} class="w-8 h-8 md:w-10 md:h-10 text-[#95b444]" />
         </div>
         <span class="text-white font-bold text-sm md:text-base">{cert.name}</span>
         <span class="text-white/60 text-xs max-w-[120px]">{cert.description}</span>

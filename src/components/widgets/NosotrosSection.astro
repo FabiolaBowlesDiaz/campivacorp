@@ -2,8 +2,27 @@
 import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
 import Headline from '~/components/ui/Headline.astro';
 import BrandOrnament from '~/components/ui/BrandOrnament.astro';
+import { Icon } from 'astro-icon/components';
 import { Image } from 'astro:assets';
 import quienesImg from '~/assets/images/quienes-somos.jpg';
+
+const pilares = [
+  {
+    icon: 'tabler:world',
+    title: 'Transacciones locales e internacionales',
+    text: 'Soluciones de alimentación humana y animal para diversos mercados de la región.',
+  },
+  {
+    icon: 'tabler:shield-check',
+    title: 'Estándares exigentes',
+    text: 'Inocuidad, calidad, trazabilidad y medio ambiente en cada transacción, junto a nuestros socios estratégicos.',
+  },
+  {
+    icon: 'tabler:route',
+    title: 'Cadena de valor monitoreada',
+    text: 'De la producción en campo a la transformación, almacenamiento y logística — con el productor primario y el cliente final en el centro.',
+  },
+];
 ---
 
 <WidgetWrapper id="nosotros" containerClass="max-w-7xl mx-auto">
@@ -20,9 +39,23 @@ import quienesImg from '~/assets/images/quienes-somos.jpg';
   <div class="md:flex md:gap-16">
     <!-- Left column: corporate text -->
     <div class="md:basis-1/2 self-center" data-aos="fade-up" data-aos-delay="100">
-      <p class="text-base text-muted leading-relaxed">
-        Somos una empresa cuyos fundadores tienen más de 15 años de experiencia en la industria de óleos, derivados y subproductos; nutrición humana con productos agroindustriales y nutrición animal. Enfocados en brindar soluciones de alimentación humana y animal, con transacciones tanto locales como internacionales, atendiendo diversos mercados de la región. Nuestros socios estratégicos y nosotros cumplimos con los estándares más exigentes de inocuidad, calidad, trazabilidad y medio ambiente; monitoreando a todos los participantes de nuestra cadena de valor desde la producción en campo, transformación industrial, almacenamiento y logística, centrando al productor primario y el cliente final como el centro de nuestra estrategia corporativa.
+      <p class="text-lg text-default leading-relaxed mb-8">
+        Somos una empresa cuyos fundadores tienen más de 15 años de experiencia en la industria de
+        óleos, derivados y subproductos, y en nutrición humana y animal con productos agroindustriales.
       </p>
+      <ul class="space-y-5">
+        {pilares.map((p) => (
+          <li class="flex gap-4">
+            <div class="w-10 h-10 rounded-lg bg-[#95b444]/15 flex items-center justify-center flex-shrink-0 mt-0.5">
+              <Icon name={p.icon} class="w-5 h-5 text-[#5d6f31]" />
+            </div>
+            <div>
+              <p class="font-semibold text-heading mb-0.5">{p.title}</p>
+              <p class="text-muted text-sm leading-relaxed">{p.text}</p>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
 
     <!-- Right column: agricultural image -->

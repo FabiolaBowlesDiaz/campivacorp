@@ -1,6 +1,6 @@
 ---
 import Layout from '~/layouts/PageLayout.astro';
-import HeroSlider from '~/components/widgets/HeroSlider.astro';
+import HeroMain from '~/components/widgets/HeroMain.astro';
 import StatsCounter from '~/components/widgets/StatsCounter.astro';
 import NosotrosSection from '~/components/widgets/NosotrosSection.astro';
 import ProductosSection from '~/components/widgets/ProductosSection.astro';
@@ -8,6 +8,7 @@ import ServiciosSection from '~/components/widgets/ServiciosSection.astro';
 import ValoresSection from '~/components/widgets/ValoresSection.astro';
 import CertificacionesSection from '~/components/widgets/CertificacionesSection.astro';
 import PropositoSection from '~/components/widgets/PropositoSection.astro';
+import IntelligenceSection from '~/components/widgets/IntelligenceSection.astro';
 import ContactoSection from '~/components/widgets/ContactoSection.astro';
 
 const metadata = {
@@ -17,8 +18,8 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Slider (id="inicio" is inside the component) -->
-  <HeroSlider />
+  <!-- Hero (id="inicio" is inside the component) -->
+  <HeroMain />
 
   <!-- Stats Counter (id="stats" is inside the component) -->
   <StatsCounter />
@@ -30,6 +31,9 @@ const metadata = {
   <ValoresSection />
   <CertificacionesSection />
   <PropositoSection />
+
+  <!-- Puente con Campiva Intelligence -->
+  <IntelligenceSection />
 
   <!-- Contact Section -->
   <ContactoSection />

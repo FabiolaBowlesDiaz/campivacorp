@@ -62,34 +62,22 @@ const categories = [
 
   <div class="flex flex-wrap justify-center gap-6">
     {categories.map((cat, index) => (
-      <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]" data-aos="fade-up" data-aos-delay={String(index * 100)}>
-        <div class="hs-accordion-group">
-          <div
-            class="hs-accordion bg-white rounded-lg border border-[#95b444]/20 shadow-sm hover:shadow-md transition-shadow"
-            id={`hs-productos-${cat.id}`}
-          >
-            <button
-              class="hs-accordion-toggle py-4 px-5 inline-flex items-center gap-x-3 w-full font-semibold text-start text-heading"
-              aria-expanded="false"
-              aria-controls={`hs-collapse-${cat.id}`}
-            >
-              <Icon name={cat.icon} class="w-8 h-8 text-[#95b444] flex-shrink-0" />
-              <span class="font-heading text-lg">{cat.name}</span>
-              <Icon name="tabler:chevron-down" class="hs-accordion-active:rotate-180 transition-transform w-5 h-5 ml-auto text-muted" />
-            </button>
-            <div
-              id={`hs-collapse-${cat.id}`}
-              class="hs-accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
-              role="region"
-              aria-labelledby={`hs-productos-${cat.id}`}
-            >
-              <ul class="px-5 pb-4 space-y-1 text-muted text-sm">
-                {cat.products.map((p) => (
-                  <li>{p}</li>
-                ))}
-              </ul>
+      <div class="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]" data-aos="fade-up" data-aos-delay={String(index * 50)}>
+        <div class="bg-white rounded-xl border border-[#95b444]/20 shadow-sm hover:shadow-lg transition-shadow h-full p-6">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-11 h-11 rounded-lg bg-[#95b444]/15 flex items-center justify-center flex-shrink-0">
+              <Icon name={cat.icon} class="w-6 h-6 text-[#5d6f31]" />
             </div>
+            <h3 class="font-heading font-semibold text-xl text-heading">{cat.name}</h3>
           </div>
+          <ul class="space-y-1.5 text-muted text-sm leading-relaxed">
+            {cat.products.map((p) => (
+              <li class="flex gap-2">
+                <span class="text-[#95b444] font-bold" aria-hidden="true">·</span>
+                <span>{p}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     ))}

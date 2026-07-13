@@ -1,0 +1,83 @@
+---
+// IntelligenceSection.astro — puente con Campiva Intelligence.
+// Consume el endpoint público del medio (CORS habilitado) y muestra los
+// últimos análisis del desk. Si el fetch falla, la sección muestra solo
+// el CTA al medio (nunca queda rota).
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import { Icon } from 'astro-icon/components';
+---
+
+<WidgetWrapper id="inteligencia" containerClass="max-w-7xl mx-auto">
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-[#f7f8f2]"></div>
+  </Fragment>
+
+  <div data-aos="fade-up">
+    <Headline
+      title="Inteligencia de mercados"
+      subtitle="Análisis diarios del desk de Campiva Intelligence: cifras verificadas y lectura propia de los mercados agro de Bolivia y LATAM"
+    />
+  </div>
+
+  <div id="ci-feed" class="grid md:grid-cols-3 gap-6 mb-10" data-aos="fade-up" data-aos-delay="100">
+    <!-- las cards se insertan por JS; el bloque queda oculto si el fetch falla -->
+  </div>
+
+  <div class="text-center" data-aos="fade-up" data-aos-delay="150">
+    <a
+      href="https://intelligence.campivacorp.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center gap-2 bg-[#0B1A2E] hover:bg-[#16283f] text-white font-semibold px-8 py-3.5 rounded-md transition-colors"
+    >
+      Visitar Campiva Intelligence
+      <Icon name="tabler:arrow-up-right" class="w-5 h-5" />
+    </a>
+  </div>
+</WidgetWrapper>
+
+<script>
+  async function loadIntelligenceFeed() {
+    const feed = document.getElementById('ci-feed');
+    if (!feed || feed.dataset.loaded) return;
+    feed.dataset.loaded = '1'; // flag síncrono: evita doble carga (init + astro:page-load)
+
+    try {
+      const res = await fetch('https://intelligence.campivacorp.com/datos/ultimos.json');
+      if (!res.ok) throw new Error(String(res.status));
+      const data = await res.json();
+      const items = (data.analisis || []).slice(0, 3);
+      if (!items.length) throw new Error('vacio');
+
+      for (const item of items) {
+        const card = document.createElement('a');
+        card.href = item.url;
+        card.target = '_blank';
+        card.rel = 'noopener noreferrer';
+        card.className =
+          'block bg-[#0B1A2E] rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all group';
+
+        const kicker = document.createElement('p');
+        kicker.className = 'text-[#E8B54A] uppercase tracking-wider text-xs font-semibold mb-3';
+        kicker.textContent = item.kicker || 'Análisis del desk';
+
+        const title = document.createElement('h3');
+        title.className =
+          'font-heading font-semibold text-white text-xl leading-snug mb-3 group-hover:text-[#cbdc53] transition-colors';
+        title.textContent = item.title;
+
+        const bajada = document.createElement('p');
+        bajada.className = 'text-white/65 text-sm leading-relaxed line-clamp-4';
+        bajada.textContent = item.bajada || '';
+
+        card.append(kicker, title, bajada);
+        feed.appendChild(card);
+      }
+    } catch {
+      feed.style.display = 'none';
+    }
+  }
+
+  document.addEventListener('astro:page-load', loadIntelligenceFeed);
+</script>

@@ -1,0 +1,53 @@
+---
+// HeroMain.astro — hero estático con fotografía y jerarquía editorial.
+// Reemplaza al HeroSlider (3 slides de gradiente sin imágenes, −90KB de JS).
+import { Image } from 'astro:assets';
+import heroImg from '~/assets/images/hero-campo.jpg';
+---
+
+<section id="inicio" class="relative">
+  <div class="absolute inset-0 overflow-hidden">
+    <Image
+      src={heroImg}
+      alt="Campo de granos al atardecer"
+      class="w-full h-full object-cover"
+      widths={[768, 1440, 2200]}
+      sizes="100vw"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <!-- overlay: legibilidad del texto sobre la foto, más denso a la izquierda -->
+    <div class="absolute inset-0 bg-gradient-to-r from-[#25272f]/90 via-[#25272f]/65 to-[#25272f]/25"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 md:px-6">
+    <div class="flex items-center min-h-[calc(100vh-77px)] max-h-[900px] py-24">
+      <div class="max-w-2xl">
+        <p class="font-sans text-[#cbdc53] uppercase tracking-[0.2em] text-xs md:text-sm font-semibold mb-5">
+          Trading · Brokeraje · Logística
+        </p>
+        <h1 class="font-heading font-semibold text-white text-4xl md:text-6xl leading-[1.08] mb-6">
+          Productos y soluciones agroindustriales para el mundo
+        </h1>
+        <p class="font-sans text-white/85 text-lg md:text-xl leading-relaxed mb-9 max-w-xl">
+          Conectamos la agroindustria de Bolivia y LATAM con los mercados del mundo, con estándares
+          internacionales de calidad, trazabilidad e inocuidad.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a
+            href="#productos"
+            class="bg-[#95b444] hover:bg-[#cbdc53] text-[#25272f] font-bold px-8 py-3.5 rounded-md transition-colors text-center"
+          >
+            Ver productos
+          </a>
+          <a
+            href="#contacto"
+            class="border-2 border-white/80 text-white hover:bg-white/10 font-bold px-8 py-3.5 rounded-md transition-colors text-center"
+          >
+            Contactar
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
