@@ -8,7 +8,7 @@ metadata:
   title:
     default: 'campivacorp.'
     template: '%s -- campivacorp.'
-  description: 'campivacorp. - Soluciones agroindustriales para el mundo. Trading, brokeraje y logistica de productos agroindustriales con certificaciones internacionales.'
+  description: 'campivacorp. - Soluciones agroindustriales para el mundo. Trading, brokeraje y logística de productos agroindustriales con certificaciones internacionales.'
   robots:
     index: true
     follow: true
@@ -17,7 +17,7 @@ metadata:
     images:
       - url: '~/assets/images/default.png'
         width: 1200
-        height: 628
+        height: 630
     type: website
 
 i18n:
